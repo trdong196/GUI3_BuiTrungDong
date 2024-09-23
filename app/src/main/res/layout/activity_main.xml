@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:stretchColumns="1"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TableRow>
+        <TextView
+            android:layout_span="2"
+            android:gravity="center"
+            android:text="CHƯƠNG TRÌNH TÍNH CHỈ SỐ BMI"
+            android:background="#4CAF50"
+            android:textColor="#FFFFFF"
+            android:padding="10dp"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="Nhập tên:"
+            android:padding="8dp"/>
+        <EditText
+            android:id="@+id/editTextName"
+            android:hint="Nhập tên"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="Chiều cao:"
+            android:padding="8dp"/>
+        <EditText
+            android:id="@+id/editTextHeight"
+            android:hint="cm"
+            android:inputType="numberDecimal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="Cân nặng:"
+            android:padding="8dp"/>
+        <EditText
+            android:id="@+id/editTextWeight"
+            android:hint="kg"
+            android:inputType="numberDecimal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"/>
+    </TableRow>
+
+    <TableRow>
+
+        <Button
+            lay
+            android:id="@+id/buttonCalculateBMI"
+            android:layout_width="250dp"
+            android:layout_gravity="center"
+            android:layout_span="2"
+            android:background="#D3D3D3"
+            android:padding="16dp"
+            android:text="TÍNH BMI"
+            android:textColor="@color/white" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="BMI="
+            android:padding="8dp"/>
+        <TextView
+            android:id="@+id/textViewBMIResult"
+            android:padding="8dp"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="Chẩn đoán:"
+            android:padding="8dp"/>
+        <TextView
+            android:id="@+id/textViewDiagnosis"
+            android:padding="8dp"/>
+    </TableRow>
+</TableLayout>
